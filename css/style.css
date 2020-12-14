@@ -9,8 +9,12 @@
   --text--fill: #fffb00;
 }
 body {
-  background-image:linear-gradient(to top, rgba(48, 48, 47, 0.66), rgba(215, 247, 186, 0.66)),
-   url('../img/computer.jpeg');
+  background-image: linear-gradient(
+      to top,
+      rgba(48, 48, 47, 0.66),
+      rgba(215, 247, 186, 0.66)
+    ),
+    url('../img/computer.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -49,9 +53,11 @@ body {
   border: 2px solid goldenrod;
 }
 
-label {
+.reg-input label {
+  opacity: 2;
   color: black;
 }
+
 .header {
   background-color: transparent;
   /* border-bottom: ; */
@@ -69,7 +75,7 @@ label {
 .form.main {
   padding: 30px 40px;
 }
-label{
+label {
   color: #ffffff;
   font-weight: 600;
 }
@@ -80,17 +86,16 @@ label{
   display: flex;
   flex-direction: column;
 }
-.reg-input input::placeholder{
+.reg-input input::placeholder {
   color: #ffffff;
 }
-.reg-input textarea::placeholder{
+.reg-input textarea::placeholder {
   color: #ffffff;
 }
 
 .reg-input input {
   padding: 10px;
-  background:transparent;
-
+  background: transparent;
 }
 
 .reg-input input {
