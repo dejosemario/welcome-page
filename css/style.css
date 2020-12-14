@@ -10,7 +10,7 @@
 }
 body {
   background-image:linear-gradient(to top, rgba(48, 48, 47, 0.66), rgba(215, 247, 186, 0.66)),
-   url('./computer.jpeg');
+   url('../img/computer.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
