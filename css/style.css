@@ -9,7 +9,7 @@
   --text--fill: #fffb00;
 }
 body {
-  background-image:linear-gradient(to top, rgba(48, 48, 47, 0.66), rgba(215, 247, 186, 0.66)),
+  background-image:linear-gradient(to top, rgba(0, 0, 0, 0.66), rgba(54, 77, 31, 0.66)),
    url('../img/computer.jpeg');
   background-size: cover;
   background-position: center;
@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  background-color: #76787c;
+  background-color: transparent;
   width: 500px;
   max-width: 100%;
   border: 3px solid var(--border--fill);
@@ -31,8 +31,9 @@ body {
   position: relative;
   padding: 0px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0.6, 0.3);
-  opacity: 0.4;
+  opacity: 0.99;
   z-index: -1;
+  /* filter: blur(0); */
 }
 
 .imgman {
@@ -66,8 +67,9 @@ label {
   /* flex-direction: column; */
 }
 
-.form.main {
-  padding: 30px 40px;
+.main {
+  /* opacity: 0.4; */
+  /* padding: 30px 40px; */
 }
 label{
   color: #ffffff;
