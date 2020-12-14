@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  background-color: #76787c;
+  background-color: transparent;
   width: 500px;
   max-width: 100%;
   border: 3px solid var(--border--fill);
@@ -35,8 +35,9 @@ body {
   position: relative;
   padding: 0px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0.6, 0.3);
-  opacity: 0.4;
+  opacity: 0.99;
   z-index: -1;
+  /* filter: blur(0); */
 }
 
 .imgman {
@@ -72,8 +73,9 @@ body {
   /* flex-direction: column; */
 }
 
-.form.main {
-  padding: 30px 40px;
+.main {
+  /* opacity: 0.4; */
+  /* padding: 30px 40px; */
 }
 label {
   color: #ffffff;
