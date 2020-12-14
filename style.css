@@ -6,10 +6,11 @@
 
 :root {
   --border--fill: #d7f584;
-  --text--fill: #fffc0a;
+  --text--fill: #fffb00;
 }
 body {
-  background-image: url('./computer.jpeg');
+  background-image:linear-gradient(to top, rgba(48, 48, 47, 0.66), rgba(215, 247, 186, 0.66)),
+   url('./computer.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -18,16 +19,19 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  filter: blur(0.94);
 }
 
 .container {
-  background-color: #cbd2df;
-  width: 400px;
+  background-color: #76787c;
+  width: 500px;
   max-width: 100%;
-  border: 2px solid var(--border--fill);
+  border: 3px solid var(--border--fill);
   border-radius: 50px 0;
   position: relative;
+  padding: 0px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0.6, 0.3);
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -65,7 +69,10 @@ label {
 .form.main {
   padding: 30px 40px;
 }
-
+label{
+  color: #ffffff;
+  font-weight: 600;
+}
 .reg-input {
   /* margin-bottom: 10px; */
   /* background-color: blue; */
@@ -73,19 +80,29 @@ label {
   display: flex;
   flex-direction: column;
 }
-
-.reg-input input {
-  padding: 2px;
+.reg-input input::placeholder{
+  color: #ffffff;
+}
+.reg-input textarea::placeholder{
+  color: #ffffff;
 }
 
 .reg-input input {
-  border: 1px solid goldenrod;
-  border-radius: 5px 0;
+  padding: 10px;
+  background:transparent;
+
+}
+
+.reg-input input {
+  border: 2px solid goldenrod;
+  border-radius: 10px 0;
 }
 
 .reg-input textarea {
-  border: 1px solid goldenrod;
+  border: 2px solid goldenrod;
   border-radius: 5px 0;
+  background: transparent;
+
   height: 60px;
 }
 
